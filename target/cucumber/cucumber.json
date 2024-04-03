@@ -1,0 +1,186 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-04-03T04:14:21.139Z",
+        "line": 3,
+        "name": "Play the OEP to get ODD",
+        "description": "",
+        "id": "oddevenprime-game-play;play-the-oep-to-get-odd",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6309600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Create an OEP Game Play object",
+            "match": {
+              "location": "stepDefinitions.OepTest.createOEPObject()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1998100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Play the Game with number 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.OepTest.playGameWithNumber(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [PRIME] but found [ODD]\r\n\tat org.testng.Assert.fail(Assert.java:111)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1578)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:150)\r\n\tat org.testng.Assert.assertEquals(Assert.java:132)\r\n\tat org.testng.Assert.assertEquals(Assert.java:656)\r\n\tat org.testng.Assert.assertEquals(Assert.java:666)\r\n\tat stepDefinitions.OepTest.verifyResult(OepTest.java:32)\r\n\tat ✽.The result is \"ODD\"(file:///D:/Training/testing-assessments/oep-project/src/test/java/oep_maven_project/oep_project/oeptest.feature:6)\r\n",
+              "duration": 7000900,
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "The result is \"ODD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ODD\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.OepTest.verifyResult(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-03T04:14:21.201Z",
+        "line": 8,
+        "name": "Play the OEP to Even",
+        "description": "",
+        "id": "oddevenprime-game-play;play-the-oep-to-even",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Create an OEP Game Play object",
+            "match": {
+              "location": "stepDefinitions.OepTest.createOEPObject()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 979500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Play the Game with number 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.OepTest.playGameWithNumber(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The result is \"EVEN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"EVEN\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.OepTest.verifyResult(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-04-03T04:14:21.203Z",
+        "line": 13,
+        "name": "Play the OEP to ODD and PRIME",
+        "description": "",
+        "id": "oddevenprime-game-play;play-the-oep-to-odd-and-prime",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Create an OEP Game Play object",
+            "match": {
+              "location": "stepDefinitions.OepTest.createOEPObject()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I Play the Game with number 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 28
+                }
+              ],
+              "location": "stepDefinitions.OepTest.playGameWithNumber(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The result is \"PRIME\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PRIME\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.OepTest.verifyResult(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "OddEvenPrime Game Play",
+    "description": "",
+    "id": "oddevenprime-game-play",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/oep_maven_project/oep_project/oeptest.feature",
+    "tags": []
+  }
+]

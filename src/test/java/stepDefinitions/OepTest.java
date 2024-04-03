@@ -1,4 +1,5 @@
-package oep_maven_project.oep_project;
+package stepDefinitions;
+
 
 import org.testng.Assert;
 
@@ -6,6 +7,7 @@ import org.testng.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import oep_maven_project.oep_project.OEP;
 
 
 
@@ -30,3 +32,4 @@ public class OepTest {
         Assert.assertEquals(expectedResult, result);
     }
 }
+
