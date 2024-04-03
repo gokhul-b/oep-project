@@ -1,9 +1,19 @@
 package oep_maven_project.oep_project;
+
 import org.testng.Assert;
+
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        plugin = {"json:target/cucumber.json"})
 public class OepTest {
 	private OEP oep;
     private int number;

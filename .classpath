@@ -36,5 +36,16 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/gokul/.m2/repository/io/cucumber/cucumber-core/6.4.0/cucumber-core-6.4.0.jar" sourcepath="C:/Users/gokul/.m2/repository/io/cucumber/cucumber-core/6.4.0/cucumber-core-6.4.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.groupId" value="io.cucumber"/>
+			<attribute name="maven.artifactId" value="cucumber-core"/>
+			<attribute name="maven.version" value="6.4.0"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
