@@ -12,8 +12,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-        plugin = {"json:target/cucumber.json"})
+@CucumberOptions(features = "src/test/resources",
+glue = {"oep_maven_project.oep_project"},
+plugin = {"json:target/cucumber/cucumber.json"})
 public class OepTest {
 	private OEP oep;
     private int number;
